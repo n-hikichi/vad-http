@@ -12,7 +12,8 @@
 #              press ctrl+c to quit, Flask からの message
 #              Werkzeug は Flask が利用している WSGI 向け package
 
-SYSTEM_VERSION = "v1.4"
+SYSTEM_VERSION = "r0.9"
+#SYSTEM_VERSION = "v1.4"
 #SYSTEM_VERSION = "v1.3"
 
 CONVERSATION_END_CYCLE = 10

@@ -1,0 +1,45 @@
+Need online for download model files.
+
+
+
+from scipy.signal import kaiser
+ kaiser Ç»Çµ
+ => https://github.com/PaddlePaddle/PaddleSpeech/pull/3874
+
+
+
+importError cannot import name 'check_argument_types' from "typeguard'
+
+=> pip install typeguard=2.13.3
+
+
+
+espnet Ç copy Ç∑ÇÈÅB
+
+
+
+conda install anaconda::flask
+
+
+
+  conda env. asr-llm-tts-http
+
+=> > conda create --name asr-llm-tts-http --clone asr-llm-tts-motion
+
+(Å¶ security s/w disable 1 min.)
+âΩâÒÇ©Ç‚Ç¡ÇƒÇ§Ç‹Ç≠Ç¢Ç©Ç»Ç©Ç¡ÇΩÇÁÅAreboot
+
+
+
+
+previous:
+  conda env. asr-llm-tts-motion
+
+
+
+*  -rw-r--r-- 1 hikichi hikichi 22413 Feb  6 15:17 app_vad.py
+  -rw-r--r-- 1 hikichi hikichi 22375 Feb  6 11:51 app_vad.py~
+  drwxr-xr-x 2 hikichi hikichi  4096 Feb  6 15:07 gen-ai
+  drwxr-xr-x 2 hikichi hikichi  4096 Feb  6 17:47 gen-ai2
+  -rw-r--r-- 1 hikichi hikichi  6826 Feb  6 11:21 http-app.py~
+*  -rw-r--r-- 1 hikichi hikichi  6929 Feb  6 15:10 http_app.py
