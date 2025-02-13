@@ -1,0 +1,31 @@
+2025-02-13  TEC-N-202402-1  <hikichi@TEC-N-202402-1>
+
+	* v1.4, update status message, release 0.9.
+
+2025-02-07    <lab.common@TEC-N-202408-3>
+
+	* v1.3 create
+
+	*  (https): get_tts_response() で exception
+=> pip install pyopenjtalk
+==> NG
+	* kaiser error が発生
+	** site-package scipy に patch を
+	from scipy.signal import kaiser
+=>	from scipy.signal.windows import kaiser
+https://github.com/PaddlePaddle/PaddleSpeech/pull/3874
+
+	* typequrd error が発生
+=> pip install typeguard==2.13.3
+
+2025-02-06    <lab.common@MSI>
+
+	* http_app.py (conversation_system): jtalk の install が必要?/[]
+
+	* motion_control.py: 必要
+
+2025-02-06  TEC-N-202402-1  <hikichi@TEC-N-202402-1>
+
+	* http_app.py (send_start): change the global var.
+
+
