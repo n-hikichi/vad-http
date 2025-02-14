@@ -1,13 +1,17 @@
 # Vad-http
 Conversation http software with simple client based on ces-2025
 
-CES-2024 の、ロボット同士の日本語の 会話モジュール をベースに http 化したコード。
+CES-2024 の、ロボット同士の日本語の会話の 会話モジュール をベースに http 化したコード。
+Single client を想定。
+現状の構成では、単一の PC で閉じて、ネットワーク接続無しで動作する。
+(ASR/TTS は、モデルの download のために、最初 ネットワーク接続が必要)
+LLM は Ollama を介して、同一 PC で、LLM を サービスする構成になっている。
 
 ## Install
 
 envs/ 以下のファイルを必要に応じて適切なところに配置する。
 
-#### anaconda envs. の install
+#### Anaconda envs. の install
 anconda の環境ファイルを install している directory を、anaconda prompt から確認する。
 
 ```bash
@@ -78,12 +82,19 @@ http://127.0.0.1:5000
 
 vad-http の構成図を次に示す。
 
-![Vad-http アーキテクチャ](figs/vad-http_architecture.png)
+![Vad-http アーキテクチャ](figs/flask_application_architecture.png)
 
 
 この図を修正したい場合は、対応する Python code を修正した後、次のコマンドを与える。
 (diagrams package を install していない場合は、pip install diagrams でインストールするる。)
-
 ```bash
 python design.py
 ```
+
+## Appendex B, Toward multi client
+
+本 Web アプリは Single client を想定している。
+Multi client で、かつネットワーク接続有りだとすれば、Azure Speech-SDK を利用した ASR/TTS で構成すれば、基本的には 無音検知機能(Voice Activity Detection) も SDK に委ねられる。
+具体的には次のような構成となるだろう。
+
+![Multi client アーキテクチャ](figs/multi/multi_client_architecture.png)
