@@ -1,7 +1,7 @@
 # Vad-http
 Conversation http software with simple client based on ces-2025
 
-CES-2024 の、ロボット同士の日本語の会話の 会話モジュール をベースに http 化したコード。
+CES-2024 の、ロボット同士の日本語の 会話モジュール をベースに http 化したコード。
 
 ## Install
 
